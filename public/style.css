@@ -1,0 +1,148 @@
+body {
+    background-image: url("img/bg.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+
+.grid-container {
+    display: grid;
+    margin: 30px auto;
+    width: 500px;
+    gap: 30px 10px;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 12px 20px;
+}
+
+.item1 {
+    grid-column: 1 / 4;
+}
+
+.inp {
+    margin: 5px 0;
+    padding: 8px 5px;
+    width: 200px;
+    font-size: 12px;
+    border-width: 1px;
+    border: 1px solid rgba(154, 154, 154, 0.3);
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #ffffff;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+.btn {
+    border-radius: 4px;
+    border-style: none;
+    color: #000000;
+    font-size: 10px;
+    background: #ffffff;
+    padding: 9px 15px;
+}
+
+.btn:hover {
+    background: #000000;
+    color: #fff;
+}
+
+#logo {
+    height: 70px;
+    width: 200px;
+    display: inline-block;
+}
+
+.item2 {
+    grid-column: 1 / 4;
+}
+
+.l {
+    float: left;
+    padding-left: 15px;
+}
+
+.r {
+    float: right;
+    padding-right: 15px;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    display: inline;
+    vertical-align: middle;
+}
+
+#mn {
+    height: 13px;
+}
+
+#mx {
+    height: 13px;
+}
+
+#press {
+    height: 17px;
+}
+
+#wicon {
+    margin: 0;
+}
+
+#wdesc {
+    margin-top: 0;
+}
+
+#cityName {
+    margin: 32px 0;
+}
+
+.desc {
+    font-size: medium;
+}
+
+footer {
+    color: black;
+    margin-top: 70px;
+}
+
+@media only screen and (max-width: 480px) {
+    .grid-container {
+        margin: 30px auto;
+        width: 320px;
+        gap: 20px 10px;
+        grid-template-columns: auto auto;
+    }
+
+    .inp {
+        width: 150px;
+    }
+
+    .btn {
+        padding: 9px 13px;
+    }
+
+    .grid-item {
+        padding: 12px 20px;
+    }
+
+    .item1 {
+        grid-column: 1 / 3;
+    }
+
+    .item2 {
+        grid-column: 1 / 3;
+    }
+}

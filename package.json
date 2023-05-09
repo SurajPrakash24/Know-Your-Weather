@@ -1,0 +1,17 @@
+{
+  "name": "weatherapi",
+  "version": "1.0.0",
+  "description": "This is an API based web application to find current weather.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Suraj Prakash",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}

@@ -1,0 +1,72 @@
+<%- include('header') -%>
+
+<div class="grid-container">
+    <div class="grid-item item1">
+        <img id="logo" src="/img/logo.png" alt="">
+        <form action="/" method="post">
+            <input class="inp" type="text" name="cityname" placeholder="Enter City name">
+            <button class="btn" type="submit">SEARCH</button>
+        </form>
+    </div>
+    <div class="grid-item item2">
+        <div class="l">
+            <img id="wicon" src="<%= ph %>" alt="">
+            <p id="wdesc">
+                <%= des %>
+            </p>
+        </div>
+        <div class="r">
+            <p id="cityName">
+                <%= city %>
+            </p>
+            <h1 id="temp"><strong>
+                <%= tem %>
+            </strong></h1>
+        </div>
+    </div>
+    <div class="grid-item item3">
+        <img class="icon" id="mn" src="/img/mint.png" alt="">
+        <span>Min Temp</span>
+        <p class="desc">
+            <%= mint %>
+        </p>
+    </div>
+    <div class="grid-item item4">
+        <img class="icon" id="mx" src="/img/maxt.png" alt="">
+        <span>Max Temp</span>
+        <p class="desc">
+            <%= maxt %>
+        </p>
+    </div>
+    <div class="grid-item item5">
+        <img class="icon" src="/img/fl.png" alt="">
+        <span>Feels Like</span>
+        <p class="desc">
+            <%= flike %>
+        </p>
+    </div>
+    <div class="grid-item item6">
+        <img class="icon" id="press" src="/img/press.png" alt="">
+        <span>Pressure</span>
+        <p class="desc">
+            <%= press %>
+        </p>
+    </div>
+    <div class="grid-item item7">
+        <img class="icon" src="/img/hum.png" alt="">
+        <span>Humidity</span>
+        <p class="desc">
+            <%= hum %>
+        </p>
+    </div>
+    <div class="grid-item item8">
+        <img class="icon" src="/img/wind.png" alt="">
+        <span>Wind Speed</span>
+        <p class="desc">
+            <%= wspeed %>
+        </p>
+    </div>
+</div>
+
+<%- include('footer') -%>
+
